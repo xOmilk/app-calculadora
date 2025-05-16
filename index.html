@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <h1 tabindex="1">Calculadora</h1>
+
+            <input tabindex="0" id="outputResult" disabled placeholder="Faça uma operação" class="result" type="text">
+
+            <p id="returnTextField" tabindex="0"></p>
+
+            <div class="row">
+                <button class="button lightred" data-type="action" data-value="C" type="button"> C </button>
+                <button class="button darker" data-type="action" data-value="(" type="button"> ( </button>
+                <button class="button darker" data-type="action" data-value=")" type="button"> ) </button>
+                <button class="button darker" data-type="action" data-value="*" type="button"> X </button>
+            </div>
+            <div class="row">
+                <button class="button grey" data-type="number" data-value="7" type="button"> 7 </button>
+                <button class="button grey" data-type="number" data-value="8" type="button"> 8 </button>
+                <button class="button grey" data-type="number" data-value="9" type="button"> 9 </button>
+                <button class="button darker" data-type="action" data-value="/" type="button"> / </button>
+            </div>
+            <div class="row">
+                <button class="button grey" data-type="number" data-value="4" type="button"> 4 </button>
+                <button class="button grey" data-type="number" data-value="5" type="button"> 5 </button>
+                <button class="button grey" data-type="number" data-value="6" type="button"> 6 </button>
+                <button class="button darker" data-type="action" data-value="-" type="button"> - </button>
+            </div>
+            <div class="row">
+                <button class="button grey" data-type="number" data-value="1" type="button"> 1 </button>
+                <button class="button grey" data-type="number" data-value="2" type="button"> 2 </button>
+                <button class="button grey" data-type="number" data-value="3" type="button"> 3 </button>
+                <button class="button darker" data-type="action" data-value="+" type="button"> + </button>
+            </div>
+            <div class="row">
+                <button class="button grey" data-type="number" data-value="0" type="button"> 0 </button>
+                <button class="button grey" data-type="action" data-value="." type="button"> . </button>
+                <button id="equals" class="button equals blue" data-type="action" data-value="=" type="button"> =
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
